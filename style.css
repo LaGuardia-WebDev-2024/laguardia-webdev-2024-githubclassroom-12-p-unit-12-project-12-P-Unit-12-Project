@@ -1,8 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Delius&family=Poetsen+One&display=swap");
 
-html {
-  background-color: white;
-  padding-left: 20px;
+
+
+body {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/016/348/270/non_2x/tunnel-of-concentric-hearts-romantic-cute-background-pink-aesthetic-hearts-backdrop-illustration-vector.jpg");
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 img{
@@ -11,4 +15,45 @@ img{
 
 h1 {
   font-family: "Poetsen One", sans-serif;
+}
+
+button {
+  background-color: #F7CFD8;
+  border-color: #F7CFD8;
+}
+
+#mem1-button {
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#mem2-button {
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.mem3-button {
+  font-family: "Titan One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#buttonid {
+   display: flex;
+   justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+p {
+   font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+#opera {
+  border-radius: 30px;
 }
