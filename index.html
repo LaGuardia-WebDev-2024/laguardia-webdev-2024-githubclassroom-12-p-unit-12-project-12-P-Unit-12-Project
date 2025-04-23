@@ -1,15 +1,15 @@
 <!-- Unit 12 Project
 Requirements
-[  ] $() Select by Element, ID AND Class 
-[  ] Use Three Different jQuery Methods 
-[  ] Add Five CSS Declarations
-[  ] Include Three Images
+[yes] $() Select by Element, ID AND Class 
+[yes] Use Three Different jQuery Methods 
+[yes] Add Five CSS Declarations
+[yes] Include Three Images
 
 Select ONE Additional 
-[ no ] Feature 1 - Use .addClass() method
+[yes] Feature 1 - Use .addClass() method
 [ no ] Feature 2 - Use a variable in javaScript 
 [ no ] Feature 3 - Use .mouseover() method
-[ no ] Feature 4 - Use .show() method
+[yes] Feature 4 - Use .show() method
 [ no ] Feature 5 - Use .append() method
 -->
 
@@ -20,8 +20,15 @@ Select ONE Additional
     <meta charset="utf-8" />
     <title>Unit 12 Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    
+    <!--Astloch-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Astloch:wght@400;700&display=swap" rel="stylesheet">
+    
   </head>
   <body>
+    
     <button id="mem1-button">Memory #1</button>
     <button id="mem2-button">Memory #2</button>
     <button id="mem3-button">Memory #3</button>
@@ -29,32 +36,53 @@ Select ONE Additional
     <ol>
       <li>
         <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
+        <p id="mem1T">More about this memory.</p>
+        <img id = "img1" src= "https://cdn.shopify.com/s/files/1/0014/9690/7887/files/LC_Landscape_Blog_Images_6_1024x1024.jpg?v=1730987061" width= "250">
       </li>
 
       <li>
         <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
+        <p id = "mem2T">More about this memory.</p>
+        <img id= "img2" src = "https://th-thumbnailer.cdn-si-edu.com/V8ahPc5OXXqW_cVuB3X5zsqBFKM=/fit-in/1600x0/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/43/0c/430ce021-3089-415f-bb2d-340465beed4e/2204449610_6a0aa9d569_o.jpg" width = "250">
       </li>
 
       <li>
         <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        <p id= "mem3T">More about this memory</p>
+        <img id= "img3" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSZdwzQ5DIwspNi38nPu8Nakpz_IErPLHyZQ&s">
       </li>
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
+      
+      $("img").hide();
+      $("button").addClass("nav");
+      $(".nav").css("background-color", "#e6cefa")
+      
+      
       $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
+        $("#mem1").css("color", "#cefad0");
+        $("#mem1").text("Making Charm Bracelets With My Best Friend");
+        $("#mem1T").text("It was for her birthday, and was super fun. We got pizza after.")
+        $("#mem1").addClass("header");
+        $("#img1").show();
       });
 
       $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
+        $("#mem2").css("color", "#cefad0");
+        $("#mem2").text("Walking With My Friend In The Snow During Lunch");
+        $("#mem2T").text("She threw a snowball at me :(")
+        $("#img2").show(0);
+        $("#mem2").addClass("header");
       });
 
       $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
+        $("#mem3").css("color", "#cefad0");
+        $("#mem3").text("Matcha And Pastries With My Friend!")
+        $("#mem3T").text("our favorite pastries were the nutella beignet and the pumpkin spice croissant cube.")
+        $("#img3").show(0);
+        $("#mem3").addClass("header");
       });
     </script>
   </body>
