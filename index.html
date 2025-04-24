@@ -52,6 +52,8 @@ Select ONE Additional
         <img id= "img3" src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSZdwzQ5DIwspNi38nPu8Nakpz_IErPLHyZQ&s">
       </li>
     </ol>
+    
+    <button id="end">Restart</button>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
@@ -83,6 +85,21 @@ Select ONE Additional
         $("#mem3T").text("our favorite pastries were the nutella beignet and the pumpkin spice croissant cube.")
         $("#img3").show(0);
         $("#mem3").addClass("header");
+      });
+      
+      $("#end").click(function(){
+        $("img").hide();
+        
+        $("#mem1").text("Memory #1");
+        $("#mem1T").text("More about this memory");
+        
+        $("#mem2").text("Memory #2");
+        $("#mem2T").text("More about this memory");
+        
+        $("#mem3").text("Memory #3");
+        $("#mem3T").text("More about this memory");
+        
+       
       });
     </script>
   </body>
