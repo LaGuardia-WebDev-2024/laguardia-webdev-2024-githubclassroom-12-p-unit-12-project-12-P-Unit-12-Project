@@ -1,18 +1,17 @@
 <!-- Unit 12 Project
 Requirements
-[  ] $() Select by Element, ID AND Class 
-[  ] Use Three Different jQuery Methods 
-[  ] Add Five CSS Declarations
-[  ] Include Three Images
+[ yes ] $() Select by Element, ID AND Class 
+[ yes ] Use Three Different jQuery Methods 
+[ yes ] Add Five CSS Declarations
+[ yes ] Include Three Images
 
 Select ONE Additional 
 [ no ] Feature 1 - Use .addClass() method
 [ no ] Feature 2 - Use a variable in javaScript 
 [ no ] Feature 3 - Use .mouseover() method
-[ no ] Feature 4 - Use .show() method
+[ yes ] Feature 4 - Use .show() method
 [ no ] Feature 5 - Use .append() method
 -->
-
 
 <!DOCTYPE html>
 <html>
@@ -25,21 +24,74 @@ Select ONE Additional
     <button id="mem1-button">Memory #1</button>
     <button id="mem2-button">Memory #2</button>
     <button id="mem3-button">Memory #3</button>
-    <h1>My Top 3 Memories of <span>This Year</span></h1>
+    <h1>
+      My Top 3 Memories of <span><u>Summer 2024</u></span>
+    </h1>
     <ol>
       <li>
         <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
+        <p>More about this memory:</p>
       </li>
+
+      <img
+        id="innsbruck"
+        src="https://www.travelguide.net/media/Innsbruck.jpg"
+        style="display: none"
+        width="300"
+      />
+
+      <p style="display: none" id="Ip1">
+        -Saw the 1976 olympic 'Bergisel Ski Jump'
+      </p>
+
+      <p style="display: none" id="Ip2">
+        -Took a tram up a mountain and was able to pet sheep
+      </p>
+
+      <p style="display: none" id="Ip3">
+        -Went to a castle called "Schloss Ambras"
+      </p>
 
       <li>
         <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
+        <p>More about this memory:</p>
       </li>
+
+      <img
+        id="trento"
+        src="https://marshmallowtravels.com/wp-content/uploads/2022/03/IMG_7913-scaled.jpeg"
+        style="display: none"
+        width="300"
+      />
+
+      <p style="display: none" id="Tp1">-Went to the Trento Cathedral</p>
+
+      <p style="display: none" id="Tp2">
+        -Saw the "Castello del Buconsiglio" museum/castle
+      </p>
+
+      <p style="display: none" id="Tp3">
+        -Had a really good bruschetta at a restaurant
+      </p>
 
       <li>
         <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        <p>More about this memory:</p>
+
+        <img
+          id="wolfurt"
+          src="https://vcdn.bergfex.at/images/resized/4d/04b57f7ade966a4d_275f51dbb6b6b193.jpg"
+          style="display: none"
+          width="300"
+        />
+
+        <p style="display: none" id="Wp1">-Went hiking with my family</p>
+
+        <p style="display: none" id="Wp2">-Biking around with my cousins</p>
+
+        <p style="display: none" id="Wp3">
+          -Went with my uncle's boat on the Lake of Constance
+        </p>
       </li>
     </ol>
 
@@ -47,14 +99,29 @@ Select ONE Additional
     <script>
       $("#mem1-button").click(function () {
         $("#mem1").css("color", "purple");
+        $("#mem1").text("Innsbruck, Austria");
+        $("#innsbruck").show(2000);
+        $("#Ip1").show(2000);
+        $("#Ip2").show(2000);
+        $("#Ip3").show(2000);
       });
 
       $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
+        $("#mem2").css("color", "navy");
+        $("#mem2").text("Trento, Italy");
+        $("#trento").show(2000);
+        $("#Tp1").show(2000);
+        $("#Tp2").show(2000);
+        $("#Tp3").show(2000);
       });
 
       $("#mem3-button").click(function () {
         $("#mem3").css("color", "green");
+        $("#mem3").text("Visiting my grandma");
+        $("#wolfurt").show(2000);
+        $("#Wp1").show(2000);
+        $("#Wp2").show(2000);
+        $("#Wp3").show(2000);
       });
     </script>
   </body>
