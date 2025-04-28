@@ -1,14 +1,80 @@
-@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Delius&family=Poetsen+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kablammo&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Candal&display=swap");
 
 html {
-  background-color: white;
-  padding-left: 20px;
+  background-color: rgb(16, 46, 80);
+  text-align: center;
 }
 
-img{
+body {
+  font-family: "merienda", sans-serif;
+  margin: auto;
+  width:90%;
+  color: rgb(190, 61, 42);
+}
+
+div {
+  padding: 15px;
+  font-size: 20px;
+}
+
+img {
   border-radius: 30px;
+  width: 300px;
 }
 
 h1 {
-  font-family: "Poetsen One", sans-serif;
+  font-family: "Merienda", sans-serif;
+  font-size: 50px;
+  color: rgb(231, 139, 72);
 }
+
+h2 {
+  font-family: "candal", sans-serif;
+  background-color: rgb(26,56,90);
+  width:40%;
+  padding-bottom:5px;
+  margin:auto;
+}
+
+#bab1 {
+  background-color: rgb(245, 196, 94);
+}
+
+#bab2 {
+  background-color: rgb(231, 139, 72);
+}
+
+#bab3 {
+  background-color: rgb(245, 196, 94);
+}
+
+span {
+  font-family: "Kablammo", sans-serif;
+  color: rgb(190, 61, 42);
+}
+
+button {
+  margin-top: 30px;
+  border: solid rgb(16, 46, 80);
+  background-color: rgb(16, 46, 80);
+  color: rgb(245, 196, 94);
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Nanum Gothic", sans-serif;
+}
+
+button:hover {
+  border: solid rgb(245, 196, 94);
+  background-color: rgb(245, 196, 94);
+  color: rgb(16, 46, 80);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+https: ; //colorhunt.co/palette/ffc94ac08b5c795458453f78
