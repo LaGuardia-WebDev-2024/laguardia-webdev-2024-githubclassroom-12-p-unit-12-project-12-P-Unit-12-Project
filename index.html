@@ -1,18 +1,17 @@
 <!-- Unit 12 Project
 Requirements
-[  ] $() Select by Element, ID AND Class 
+[ yes ] $() Select by Element, ID AND Class 
 [  ] Use Three Different jQuery Methods 
-[  ] Add Five CSS Declarations
-[  ] Include Three Images
+[ yes ] Add Five CSS Declarations
+[ yes ] Include Three Images
 
 Select ONE Additional 
-[ no ] Feature 1 - Use .addClass() method
+[ yes ] Feature 1 - Use .addClass() method
 [ no ] Feature 2 - Use a variable in javaScript 
 [ no ] Feature 3 - Use .mouseover() method
 [ no ] Feature 4 - Use .show() method
 [ no ] Feature 5 - Use .append() method
 -->
-
 
 <!DOCTYPE html>
 <html>
@@ -21,6 +20,7 @@ Select ONE Additional
     <title>Unit 12 Project</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
+
   <body>
     <button id="mem1-button">Memory #1</button>
     <button id="mem2-button">Memory #2</button>
@@ -28,34 +28,44 @@ Select ONE Additional
     <h1>My Top 3 Memories of <span>This Year</span></h1>
     <ol>
       <li>
-        <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
+        <h2 class="memory-title">Senior Sunset</h2>
+
+        <img
+          src="https://hflamppost.com/wp-content/uploads/2022/05/20210622-torontosunset1-900x600.webp"
+          width="250"
+        />
       </li>
 
       <li>
-        <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
+        <h4 id="mem2">University At Albany</h4>
+        <img
+          src="https://s3.amazonaws.com/rm3.photos.prod.readmedia.com/brandings/55674/mobile/MeritLogo.png?2024"
+          width="200"
+        />
       </li>
 
       <li>
-        <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        <h3 id="mem3">Golden Birthday</h3>
+        <img
+          src="https://images.contentstack.io/v3/assets/bltcedd8dbd5891265b/bltf7cd611b4e8762aa/6665edc8f001e62457168c71/18thBirthday-Hero.jpeg?q=70&width=3840&auto=webp"
+          width="250"
+        />
       </li>
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
-      $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
-      });
+      $("h1").html("<u> Memories from 2024-2025</u>");
+      $("h2").html("<u> Senior Sunrise");
+      $("h3").html("<u> Golden Birthday:1/18/2025");
+      $("h4").html("<u> Commiting to University At Albany");
+      $("h4").css("color", "purple");
+      $("h3").css("color", "gold");
+      $("h2").css("color", "orange");
+      $(".memory-title").css("color", "darkblue");
+      $(".memory-title").css("font-size", "30px");
+      $("h2").addClass("highlighted");
 
-      $("#mem2-button").click(function () {
-        $("#mem2").css("color", "blue");
-      });
-
-      $("#mem3-button").click(function () {
-        $("#mem3").css("color", "green");
-      });
     </script>
   </body>
 </html>
