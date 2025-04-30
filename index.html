@@ -3,7 +3,7 @@ Requirements
 [  ] $() Select by Element, ID AND Class 
 [  ] Use Three Different jQuery Methods 
 [  ] Add Five CSS Declarations
-[  ] Include Three Images
+[  x] Include Three Images
 
 Select ONE Additional 
 [ no ] Feature 1 - Use .addClass() method
@@ -25,36 +25,45 @@ Select ONE Additional
     <button id="mem1-button">Memory #1</button>
     <button id="mem2-button">Memory #2</button>
     <button id="mem3-button">Memory #3</button>
-    <h1>My Top 3 Memories of <span>This Year</span></h1>
+    <h1>My Top 3 Memories of <span>Senior Year</span></h1>
     <ol>
       <li>
-        <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
+        <h3 id="mem1">#1  </h3>
+        <img src="https://cdn.glitch.global/b17b09b6-ccc7-4a38-8b6f-cdc0693cceed/IMG_2205.jpeg?v=1745425415922" width=200 id="world" style="display:none"/>
+        <p> we had a world was the best play ive ever seen, it cured somthing in me.</p>
+      </li> 
+      <li>
+        <h3 id="mem2">#2</h3>
+        <img src="https://cdn.glitch.global/b17b09b6-ccc7-4a38-8b6f-cdc0693cceed/IMG_4227.jpeg?v=1745425493640" width="200" id="bomm" style="display:none"/>
+        <p> it was nice to see where i will be going to school and meet all the people that will be there with me.</p>
       </li>
 
       <li>
-        <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
-      </li>
-
-      <li>
-        <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        <h3 id="mem3"> #3</h3>
+     <img src="https://cdn.glitch.global/b17b09b6-ccc7-4a38-8b6f-cdc0693cceed/IMG_5421.jpeg?v=1745943005520" width="200"id="sun" style="display:none">
+        
+        <p> after a long summer it was so nice to hang out with people and bond, it was so sad that it was our last year but so nice to hangout with other seniors </p>
       </li>
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
       $("#mem1-button").click(function () {
-        $("#mem1").css("color", "purple");
+        $("#mem1").css("color", "red");
+        $("#world").show(2000)
+         $("#mem1").hide().text("seeing we had a world- by josha haromn ").show(3000)
       });
 
       $("#mem2-button").click(function () {
         $("#mem2").css("color", "blue");
+        $("#bomm").show(2000)
+      $("#mem2").hide().text("accepted students day at Ithaca").show(3000)
       });
 
       $("#mem3-button").click(function () {
         $("#mem3").css("color", "green");
+        $("#sun").show(2000)
+          $("#mem3").hide().text("senior sunset").show(3000)
       });
     </script>
   </body>
