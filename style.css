@@ -7,8 +7,21 @@ html {
 
 img{
   border-radius: 30px;
+  border: 5px solid brown;
 }
 
 h1 {
   font-family: "Poetsen One", sans-serif;
+  
+  
 }
+h3 {
+  color: red;
+    background-color: maroon; 
+}
+
+.memory {
+  color: blue;
+  background-color: yellow;
+}
+

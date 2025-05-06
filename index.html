@@ -29,35 +29,88 @@ Select ONE Additional
     <ol>
       <li>
         <h3 id="mem1">Memory #1</h3>
-        <p>More about this memory.</p>
+        <p class= "memory">More about this memory.</p>
+        <img 
+          id="playing-cards"
+          src="https://upload.wikimedia.org/wikipedia/commons/5/58/AcetoFive.JPG"
+             style="display: none"
+             width="200"
+             />
       </li>
 
       <li>
         <h3 id="mem2">Memory #2</h3>
-        <p>More about this memory.</p>
+        <p class="memory">More about this memory.</p>
+        
+        <img 
+          id="word-puzzles"
+          src="https://eslvault.com/wp-content/plugins/phastpress/phast.php/c2VydmljZT1pbWFnZXMmc3JjPWh0dHBzJTNBJTJGJTJGZXNsdmF1bHQuY29tJTJGd3AtY29udGVudCUyRnVwbG9hZHMlMkYyMDIxJTJGMDIlMkZmcmVlLXByaW50YWJsZS1yZWJ1cy1wdXp6bGVzLTEuanBnJmNhY2hlTWFya2VyPTE3MjM1ODAxMzQtMjk4NjAmdG9rZW49YjhhOGNkNDU4NDhmYWE5Ng.q.jpg"
+             style="display: none"
+             width="200"
+             />
+        
       </li>
 
       <li>
         <h3 id="mem3">Memory #3</h3>
-        <p>More about this memory</p>
+        <p class="memory">More about this memory</p>
+        
+        <img 
+          id="draw"
+          src="https://i.ytimg.com/vi/HLXhpKfdk-8/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AGYBoAC4AOKAgwIABABGHEgJSh_MA8=&rs=AOn4CLBsGT9XlnmY3hz7SV8ghRGfscmWqw"
+             style="display: none"
+             width="200"
+             />
+        
       </li>
     </ol>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script>
+     
+      
+      
       $("#mem1-button").click(function () {
         $("#mem1").css("color", "purple");
       });
+      $("#mem1").text("Playing Card Game")
 
+    
+      
+      
+      
       $("#mem2-button").click(function () {
         $("#mem2").css("color", "blue");
       });
-
+$("#mem2").text("Word Puzzles")
+    
+   
+      
+      
+      
       $("#mem3-button").click(function () {
         $("#mem3").css("color", "green");
       });
+      $("#mem3").text("Drawsaurus")
+      
+     
+      
+      
+      $(".memory").css("font-family", "cursive");    
+    $("h3").css("font-style", "italic");
+    
+    
+    $("#playing-cards").show(2000);
+      
+    $("#word-puzzles").show(2000);
+      
+      $("#draw").show(2000);
+      
+      
+    
     </script>
   </body>
 </html>
 
 <!--- Taken From Khan Academy HTML/JS: Making webpages interactive with jQuery-->
+
